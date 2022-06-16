@@ -1,9 +1,25 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  // convert passed string into an array and reverse it
+  const reversedArray = word.split('').reverse()
+  const reversedString = reversedArray.join('')
+  //check if passed string is equal to the reversed string
+  if(reversedString === word) {
+    return true
+  }else {
+    return false
+  }
 }
+
 
 /* 
   Add your pseudocode here
+  convert passed string into an array
+  using reverse method reverse elements in the array
+  convert reversed array into a string 
+  check if passed string is equal to the reversed string
+      return true if condition is true
+    else return false
 */
 
 /*
